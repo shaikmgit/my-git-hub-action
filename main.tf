@@ -10,9 +10,7 @@ terraform {
 # Configure the AWS Provider
 provider "aws" {
   region = "us-east-1"
-  access_key = "AKIAYIQQ2F2EZGBIWX5F"
-  secret_key = "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"
-}
+ }
 resource "aws_instance" "web" {
   ami           = "ami-06b09bfacae1453cb"
   instance_type = "t2.micro"
